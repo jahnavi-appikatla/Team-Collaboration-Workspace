@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+const API_BASE_URL = "https://flowspace-api-j2uw.onrender.com";
 const API = async (path, options = {}) => {
   const token = localStorage.getItem("flowspace_token");
 
