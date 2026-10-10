@@ -3,7 +3,7 @@ const API_BASE_URL = "https://flowspace-api-j2uw.onrender.com";
 const API = async (path, options = {}) => {
   const token = localStorage.getItem("flowspace_token");
 
-  const response = await fetch("/api" + path, {
+  const response = await fetch(API_BASE_URL + "/api" + path, {
     ...options,
     headers: {
       "Content-Type": "application/json",
